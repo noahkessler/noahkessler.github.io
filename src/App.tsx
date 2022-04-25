@@ -16,6 +16,7 @@ const App = () => {
         <AboutMe />
         <Separator onClick={scrollIntoView("Skills&Tech")} />
         <SkillsAndTech />
+        <Separator onClick={scrollIntoView("Experience")} />
       </Sections>
     </ThemeProvider>
   );

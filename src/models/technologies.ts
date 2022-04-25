@@ -6,9 +6,27 @@ export enum Technology {
   SQS = "SQS",
   DynamoDB = "DynamoDB",
   CDK = "CDK",
+  NodeJS = "NodeJS",
 }
 
 export interface SkillDetails {
+  /**
+   * Description of the skill
+   */
   description: string;
-  technologies: Technology[];
+
+  /**
+   * Technologies involved
+   */
+  technologies: {
+    /**
+     * Type of technology
+     */
+    technology: Technology;
+
+    /**
+     * Image of the technology
+     */
+    image: string;
+  }[];
 }

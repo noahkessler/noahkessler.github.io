@@ -16,8 +16,8 @@ const DownArrow: React.FC = () => {
           x2="38"
           y2="37.0503"
           stroke="#EFF4FC"
-          stroke-width="7"
-          stroke-linecap="round"
+          strokeWidth="7"
+          strokeLinecap="round"
         />
         <line
           x1="38"
@@ -25,8 +25,8 @@ const DownArrow: React.FC = () => {
           x2="71.0503"
           y2="4"
           stroke="#EFF4FC"
-          stroke-width="7"
-          stroke-linecap="round"
+          strokeWidth="7"
+          strokeLinecap="round"
         />
       </svg>
     </Container>

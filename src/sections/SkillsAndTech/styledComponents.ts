@@ -17,6 +17,17 @@ export const TechContainer = styled.div`
   flex-direction: column;
 `;
 
+export const IconsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  .img {
+    width: 50%;
+    height: 50%;
+  }
+`;
+
 export const Header = styled.h1`
   font-family: ${(props) => props.theme.font.heading.family};
   font-size: ${(props) => props.theme.font.heading.size}px;
