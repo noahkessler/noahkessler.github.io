@@ -8,7 +8,9 @@ const Nav: React.FC = () => {
       <NavItem onClick={scrollIntoView("Skills&Tech")}>
         {"Skills & Technologies"}
       </NavItem>
-      <NavItem>{"Work Experience"}</NavItem>
+      <NavItem onClick={scrollIntoView("Experience")}>
+        {"Work Experience"}
+      </NavItem>
     </NavContainer>
   );
 };

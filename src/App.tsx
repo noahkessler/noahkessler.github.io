@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { scrollIntoView } from "./helpers";
 import { AboutMe, Nav, Separator, SkillsAndTech } from "./sections";
+import { Experience } from "./sections/Experience";
 import { Sections } from "./styledComponents";
 import { darkMode } from "./theme";
 
@@ -17,6 +18,7 @@ const App = () => {
         <Separator onClick={scrollIntoView("Skills&Tech")} />
         <SkillsAndTech />
         <Separator onClick={scrollIntoView("Experience")} />
+        <Experience />
       </Sections>
     </ThemeProvider>
   );

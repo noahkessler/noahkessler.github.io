@@ -6,7 +6,6 @@ import {
   SkillsContainer,
   TechContainer,
   Header,
-  IconsContainer,
 } from "./styledComponents";
 
 const formatTechnologies = (tech: Technology[]): SkillDetails["technologies"] =>

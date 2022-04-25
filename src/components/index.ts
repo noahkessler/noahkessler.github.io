@@ -4,3 +4,4 @@ export * from "./TextArea";
 export * from "./DownArrow";
 export * from "./Skills";
 export * from "./Tech";
+export * from "./ExpWidget";
