@@ -14,6 +14,18 @@ type Font = {
   size: number;
 };
 
+type Border = {
+  /**
+   * Width of the border in pixels
+   */
+  thickness: number;
+
+  /**
+   * Gradient of the border
+   */
+  gradient: string;
+};
+
 declare module "styled-components" {
   export interface DefaultTheme {
     palette: {
@@ -25,10 +37,11 @@ declare module "styled-components" {
       heading: Font;
       subheading: Font;
       paragraph: Font;
+      navbar: Font;
     };
     border: {
-      thickness: number;
-      gradient: string;
+      circle: Border;
+      box: Border;
     };
   }
 }

@@ -19,10 +19,21 @@ export const darkMode: DefaultTheme = {
       family: "'Rosario', sans-serif",
       size: 25,
     },
+    navbar: {
+      family: "'Rosario', sans-serif",
+      size: 25,
+    },
   },
   border: {
-    thickness: 5,
-    gradient:
-      "radial-gradient(75.33% 75.33% at 85.1% 10.62%, #81F495 0%, #005AFF 81.77%, #81F495 100%)",
+    circle: {
+      thickness: 5,
+      gradient:
+        "radial-gradient(75.33% 75.33% at 85.1% 10.62%, #81F495 0%, #005AFF 81.77%, #81F495 100%)",
+    },
+    box: {
+      thickness: 3,
+      gradient:
+        "radial-gradient(100% 100% at 50.08% 0%, #81F495 0%, #005AFF 100%)",
+    },
   },
 };

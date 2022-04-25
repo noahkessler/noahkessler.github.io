@@ -2,7 +2,7 @@ import { Avatar, AvatarProps, Border } from "./styledComponents";
 
 const ProfileAvatar: React.FC<AvatarProps> = ({ radius, image }) => {
   return (
-    <Border>
+    <Border radius={radius}>
       <Avatar
         {...{
           radius,

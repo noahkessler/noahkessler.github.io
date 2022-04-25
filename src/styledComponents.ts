@@ -8,4 +8,5 @@ export const Sections = styled.div`
   flex-direction: column;
   padding: 5%;
   box-sizing: border-box;
+  gap: 130px;
 `;
