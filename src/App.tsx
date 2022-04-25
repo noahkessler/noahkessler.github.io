@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import { AboutMe } from "./sections";
+import { scrollIntoView } from "./helpers";
+import { AboutMe, Nav, Separator, SkillsAndTech } from "./sections";
 import { Sections } from "./styledComponents";
-import { darkMode } from "./theme/theme";
+import { darkMode } from "./theme";
 
 const App = () => {
   // TODO: add toggle to switch between light and dark
@@ -11,7 +12,10 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Sections>
+        <Nav />
         <AboutMe />
+        <Separator onClick={scrollIntoView("Skills&Tech")} />
+        <SkillsAndTech />
       </Sections>
     </ThemeProvider>
   );

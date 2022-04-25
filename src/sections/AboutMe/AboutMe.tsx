@@ -1,12 +1,10 @@
-import { ProfileAvatar } from "../../components";
-import { Heading } from "../../components/Heading";
+import { ProfileAvatar, Heading, TextArea } from "../../components";
 import { Container, Content } from "./styledComponents";
 import profileImage from "../../assets/profile.jpeg";
-import TextArea from "../../components/TextArea/TextArea";
 
 const AboutMe: React.FC = () => {
   return (
-    <Container>
+    <Container id="About">
       <Content>
         <Heading title="Noah Kessler" subtitle="Software Engineer" />
         <TextArea>

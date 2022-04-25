@@ -20,8 +20,17 @@ export const Avatar = styled.div<AvatarProps>`
   border-radius: 50%;
 `;
 
-export const Border = styled.div`
-  background: ${(props) => props.theme.border.gradient};
-  padding: ${(props) => `${props.theme.border.thickness}px`};
+interface BorderProps {
+  /**
+   * Radius of the circle
+   */
+  radius: number;
+}
+
+export const Border = styled.div<BorderProps>`
+  background: ${(props) => props.theme.border.circle.gradient};
+  padding: ${(props) => `${props.theme.border.circle.thickness}px`};
   border-radius: 50%;
+  width: ${(props) => props.radius * 2}px;
+  height: ${(props) => props.radius * 2}px;
 `;
