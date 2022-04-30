@@ -2,7 +2,6 @@ import { useState } from "react";
 import { SkillDetails } from "../../models/technologies";
 import { TextArea } from "../TextArea";
 import { Border, Container, TechContainer } from "./styledComponents";
-import { technologies } from "../../assets/technologies";
 
 interface SkillsProps {
   /**

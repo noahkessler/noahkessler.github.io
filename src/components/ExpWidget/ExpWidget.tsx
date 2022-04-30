@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useTheme } from "styled-components";
 import {
   Container,
   Description,
   Logo,
+  LogoContainer,
   Overview,
   OverviewText,
 } from "./styledComponents";
@@ -12,6 +14,11 @@ interface ExpWidgetProps {
    * Image of the experience
    */
   image: string;
+
+  /**
+   * Image background color - defaults to theme background
+   */
+  imageBackgroundColor?: string;
 
   /**
    * Flipped - is the experience flipped (right to left)
@@ -47,7 +54,9 @@ const ExpWidget: React.FC<ExpWidgetProps> = ({
   companyName,
   jobTitle,
   timeframe,
+  imageBackgroundColor,
 }) => {
+  const theme = useTheme();
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -56,7 +65,13 @@ const ExpWidget: React.FC<ExpWidgetProps> = ({
       isExpanded={isExpanded}
       onClick={() => setIsExpanded(!isExpanded)}
     >
-      <Logo className="logo" src={image} />
+      <LogoContainer
+        className="logo"
+        imageBackgroundColor={imageBackgroundColor || theme.palette.background}
+        withBorder={!imageBackgroundColor}
+      >
+        <Logo src={image} />
+      </LogoContainer>
       <Overview isExpanded={isExpanded}>
         <OverviewText>{jobTitle}</OverviewText>
         <OverviewText>{timeframe}</OverviewText>

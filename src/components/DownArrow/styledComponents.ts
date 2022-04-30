@@ -2,9 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   border-radius: 100%;
-  padding: 25px 10px;
+  padding: 20px 5px;
 
   border: 6px solid transparent;
+
+  svg {
+    padding-top: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 
   :hover {
     cursor: pointer;

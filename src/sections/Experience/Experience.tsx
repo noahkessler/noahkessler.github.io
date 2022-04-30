@@ -2,12 +2,15 @@ import { ExpWidget } from "../../components";
 import beem from "../../assets/experience/beem.svg";
 import enboarder from "../../assets/experience/enboarder.svg";
 import unsw from "../../assets/experience/unsw.svg";
-import { Container } from "./styledComponents";
+import { Container, Header, HeaderContainer } from "./styledComponents";
 import { ConnectingLine } from "../../components/ConnectingLine";
 
 const Experience: React.FC = () => {
   return (
     <Container id="Experience">
+      <HeaderContainer>
+        <Header>Experience</Header>
+      </HeaderContainer>
       <ExpWidget
         image={beem}
         jobTitle="Software Engineer"
@@ -15,6 +18,7 @@ const Experience: React.FC = () => {
         description=""
         flipped={false}
         timeframe="Sep 2021 - Present"
+        imageBackgroundColor="#ffffff"
       />
       <ConnectingLine flipped={false} />
       <ExpWidget
@@ -33,6 +37,7 @@ const Experience: React.FC = () => {
         description="Studied a Bachelor of Computer Science at UNSW. Learnt a range of computing fundamentals."
         flipped={false}
         timeframe="2017 - 2020"
+        imageBackgroundColor="#FFE600"
       />
     </Container>
   );

@@ -15,6 +15,7 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   display: flex;
   flex-wrap: wrap;
+  padding: 1rem;
   gap: 32px;
 
   .description {
@@ -25,13 +26,11 @@ export const Container = styled.div<ContainerProps>`
     props.isExpanded
       ? css`
           flex-direction: "column";
-          .logo {
-            width: 70%;
-            max-height: 165px;
-            object-fit: cover;
-          }
           .description {
             display: block;
+          }
+          .logo {
+            width: 70%;
           }
         `
       : ""}
@@ -48,7 +47,35 @@ export const Container = styled.div<ContainerProps>`
   }
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+  width: 165px;
+  height: 165px;
+`;
+
+interface LogoContainerProps {
+  /**
+   * Image background color
+   */
+  imageBackgroundColor: string;
+
+  /**
+   * Adds a border to the container
+   */
+  withBorder: boolean;
+}
+
+export const LogoContainer = styled.div<LogoContainerProps>`
+  display: flex;
+  justify-content: center;
+  background: ${(props) => props.imageBackgroundColor};
+  border-radius: 20px;
+  ${(props) =>
+    props.withBorder
+      ? css`
+          border: 1px solid ${props.theme.palette.primary};
+        `
+      : ""}
+`;
 
 interface OverviewProps {
   /**

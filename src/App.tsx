@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { scrollIntoView } from "./helpers";
-import { AboutMe, Nav, Separator, SkillsAndTech } from "./sections";
-import { Experience } from "./sections/Experience";
+import { AboutMe, Nav, Separator, SkillsAndTech, Experience } from "./sections";
 import { Sections } from "./styledComponents";
 import { darkMode } from "./theme";
 

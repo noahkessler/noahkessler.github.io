@@ -5,6 +5,7 @@ export const darkMode: DefaultTheme = {
     primary: "#EFF4FC",
     secondary: "#81F495",
     background: "#001524",
+    darkHighlight: "#213E73",
   },
   font: {
     heading: {

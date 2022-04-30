@@ -32,6 +32,7 @@ declare module "styled-components" {
       primary: Color;
       secondary: Color;
       background: Color;
+      darkHighlight: Color;
     };
     font: {
       heading: Font;
